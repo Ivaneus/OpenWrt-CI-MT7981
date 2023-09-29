@@ -18,5 +18,6 @@ git clone --depth=1 --single-branch https://github.com/gngpp/luci-app-design-con
 
 #lucky
 #git clone --depth=1 --single-branch --branch "main" https://github.com/gdy666/luci-app-lucky.git
-git clone --depth=1 --single-branch --branch "master" https://github.com/immortalwrt/homeproxy.git
+#git clone --depth=1 --single-branch --branch "master" https://github.com/immortalwrt/homeproxy.git
 git clone --depth=1 --single-branch --branch "master" https://github.com/vernesong/OpenClash.git
+git clone --depth=1 --single-branch --branch "master" https://github.com/v2rayA/v2raya-openwrt/tree/master

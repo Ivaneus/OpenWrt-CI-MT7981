@@ -4,7 +4,8 @@ CONFIG_PACKAGE_luci-app-argon-config=y
 CONFIG_PACKAGE_luci-theme-argon=y
 CONFIG_PACKAGE_luci-theme-design=n
 CONFIG_PACKAGE_luci-app-design-config=n
-CONFIG_PACKAGE_wget-ssl=y
+CONFIG_PACKAGE_wget-nossl=y
+CONFIG_PACKAGE_wget-ssl=n
 #app
 CONFIG_PACKAGE_luci-app-upnp=y
 CONFIG_PACKAGE_luci-app-diskman=y

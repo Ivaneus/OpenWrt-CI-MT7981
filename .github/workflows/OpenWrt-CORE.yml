@@ -38,7 +38,7 @@ env:
 
 jobs:
   openwrt_core:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout Projects
         uses: actions/checkout@main
@@ -129,13 +129,6 @@ jobs:
 
           make download -j$(nproc)
           
-      - uses: actions/checkout@v4
-      - name: Set up Go
-        uses: actions/setup-go@v4
-        with:
-          go-version: '1.21'
-          run: go version
-
       - name: Compile Firmware
         run: |
           cd ./openwrt

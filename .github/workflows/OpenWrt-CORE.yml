@@ -43,6 +43,12 @@ jobs:
       - name: Checkout Projects
         uses: actions/checkout@main
         
+      - uses: actions/checkout@v4
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.21'
+              
       - name: Initialization Environment
         env:
           DEBIAN_FRONTEND: noninteractive

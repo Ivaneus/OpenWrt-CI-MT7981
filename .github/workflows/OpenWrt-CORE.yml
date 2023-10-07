@@ -85,11 +85,7 @@ jobs:
       - name: Update Feeds & Custom Scripts
         run: |
           cd ./openwrt
-          
-          cat >> feeds.conf.default <<EOF
-          src-git-full kiddin9 https://github.com/kiddin9/openwrt-packages.git
-          EOF
-          
+                 
           ./scripts/feeds update -a
 
           $GITHUB_WORKSPACE/Scripts/Settings.sh

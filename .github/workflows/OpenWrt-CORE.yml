@@ -38,7 +38,7 @@ env:
 
 jobs:
   openwrt_core:
-    runs-on: ubuntu-23.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Projects
         uses: actions/checkout@main

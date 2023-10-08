@@ -101,6 +101,8 @@ jobs:
       - name: Custom Settings
         run: |
           cd ./openwrt
+          go version
+          ls /home/runner/work/OpenWrt-CI-MT7981/OpenWrt-CI-MT7981/openwrt/build_dir/target-aarch64_cortex-a53_musl/
 
           rm -rf ./tmp* ./.config*
 

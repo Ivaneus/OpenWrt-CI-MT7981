@@ -39,5 +39,6 @@ CONFIG_PACKAGE_luci-app-vssr=y
 CONFIG_PACKAGE_luci-app-openclash=y
 CONFIG_PACKAGE_luci-app-bypass=y
 CONFIG_PACKAGE_luci-app-v2raya=y
+CONFIG_PACKAGE_luci-app-homeproxy=y
 CONFIG_PACKAGE_sing-box=y
 

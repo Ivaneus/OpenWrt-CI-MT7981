@@ -28,3 +28,5 @@ svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-
 svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-vssr
 svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-openclash
 svn export https://github.com/kiddin9/openwrt-packages/branches/master/firewall4
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/daed
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-daed

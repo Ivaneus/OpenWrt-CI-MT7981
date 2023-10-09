@@ -34,7 +34,7 @@ svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-
 
 svn export https://github.com/v2rayA/v2raya-openwrt/branches/master/luci-app-v2raya
 #svn export https://github.com/v2rayA/v2raya-openwrt/branches/master/v2raya
-svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-passwall
+#svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-passwall
 svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-passwall2
 svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-ssr-plus
 svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-vssr

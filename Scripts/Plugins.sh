@@ -24,6 +24,11 @@ git clone https://github.com/immortalwrt/homeproxy.git
 git clone https://github.com/vernesong/OpenClash.git
 git clone https://github.com/daeuniverse/daed.git
 git clone https://github.com/QiuSimons/luci-app-daed.git
+git clone https://github.com/sirpdboy/netspeedtest.git
+git clone https://github.com/sirpdboy/luci-app-autotimeset.git
+git clone https://github.com/sirpdboy/luci-app-advanced.git
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-quickstart
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-istorex
 svn export https://github.com/v2rayA/v2raya-openwrt/branches/master/luci-app-v2raya
 
 #svn export https://github.com/v2rayA/v2raya-openwrt/branches/master/v2raya

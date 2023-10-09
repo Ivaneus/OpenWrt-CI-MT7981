@@ -19,7 +19,7 @@ git clone --depth=1 --single-branch https://github.com/gngpp/luci-app-design-con
 
 #lucky
 #git clone --depth=1 --single-branch --branch "main" https://github.com/gdy666/luci-app-lucky.git
-git clone https://github.com/kenzok8/small.git
+
 git clone https://github.com/immortalwrt/homeproxy.git
 git clone https://github.com/vernesong/OpenClash.git
 git clone https://github.com/daeuniverse/daed.git
@@ -29,14 +29,14 @@ git clone https://github.com/sirpdboy/luci-app-autotimeset.git
 git clone https://github.com/sirpdboy/luci-app-advanced.git
 svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-quickstart
 svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-istorex
-svn export https://github.com/v2rayA/v2raya-openwrt/branches/master/luci-app-v2raya
 
+svn export https://github.com/v2rayA/v2raya-openwrt/branches/master/luci-app-v2raya
 #svn export https://github.com/v2rayA/v2raya-openwrt/branches/master/v2raya
-#svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-passwall2
-#svn export https://github.com/kenzok8/small/branches/master/luci-app-bypass
-#svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-ssr-plus
-#svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-vssr
-#svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-openclash
-#svn export https://github.com/kiddin9/openwrt-packages/branches/master/firewall4
-#svn export https://github.com/kiddin9/openwrt-packages/branches/master/daed
-#svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-daed
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-passwall
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-passwall2
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-ssr-plus
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-vssr
+svn export https://github.com/kenzok8/small/branches/master/luci-app-bypass
+
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/firewall4
+

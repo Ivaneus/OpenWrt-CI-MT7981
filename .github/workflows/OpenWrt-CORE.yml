@@ -143,8 +143,7 @@ jobs:
       - name: Compile Firmware
         run: |
           cd ./openwrt
-          echo $(nproc)
-          make -j4 || make -j1 V=s
+          make -j$(nproc) || make -j1 V=s
 
           echo "======================="
           df -h

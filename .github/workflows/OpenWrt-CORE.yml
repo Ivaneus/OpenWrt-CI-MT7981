@@ -42,7 +42,22 @@ jobs:
     steps:      
       - name: Checkout Projects
         uses: actions/checkout@main
-              
+
+    - name: Free Disk Space (Ubuntu)
+      uses: jlumbroso/free-disk-space@main
+      with:
+        # this might remove tools that are actually needed,
+        # if set to "true" but frees about 6 GB
+        tool-cache: true
+        
+        # all of these default to true, but feel free to set to
+        # "false" if necessary for your workflow
+        android: true
+        dotnet: true
+        haskell: true
+        large-packages: true
+        swap-storage: true
+   
       - name: Initialization Environment
         env:
           DEBIAN_FRONTEND: noninteractive
@@ -69,21 +84,7 @@ jobs:
           echo "OpenWrt_DATE=$OpenWrt_DATE" >> $GITHUB_ENV
           echo "OpenWrt_TYPE=$OpenWrt_TYPE" >> $GITHUB_ENV
           echo "OpenWrt_PW=$OpenWrt_PW" >> $GITHUB_ENV
-          echo "OpenWrt_IP=$OpenWrt_IP" >> $GITHUB_ENV
-          
-     - name: Free Disk Space (Ubuntu)
-       uses: jlumbroso/free-disk-space@main
-       with:
-        # this might remove tools that are actually needed,
-        # if set to "true" but frees about 6 GB
-        tool-cache: true
-        # all of these default to true, but feel free to set to
-        # "false" if necessary for your workflow
-        android: true
-        dotnet: true
-        haskell: true
-        large-packages: true
-        swap-storage: true
+          echo "OpenWrt_IP=$OpenWrt_IP" >> $GITHUB_ENV        
         
       - name: Check Scripts
         run: |

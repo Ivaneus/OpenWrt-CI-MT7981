@@ -1,5 +1,11 @@
 #!/bin/bash
 
+#istore Theme
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-quickstart
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/quickstart
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-istorex
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-istore
+
 #Design Theme
 git clone --depth=1 --single-branch --branch $(echo $OpenWrt_URL | grep -iEq "lede|padavanonly" && echo "main" || echo "js") https://github.com/papagaye744/luci-theme-design.git
 git clone --depth=1 --single-branch https://github.com/gngpp/luci-app-design-config.git
@@ -20,25 +26,43 @@ git clone --depth=1 --single-branch https://github.com/gngpp/luci-app-design-con
 #lucky
 #git clone --depth=1 --single-branch --branch "main" https://github.com/gdy666/luci-app-lucky.git
 
-git clone https://github.com/immortalwrt/homeproxy.git
-git clone https://github.com/vernesong/OpenClash.git
-git clone https://github.com/daeuniverse/daed.git
-git clone https://github.com/QiuSimons/luci-app-daed.git
+#v2raya
+svn export https://github.com/v2rayA/v2raya-openwrt/branches/master/luci-app-v2raya
+#svn export https://github.com/v2rayA/v2raya-openwrt/branches/master/v2raya
+
+#homeproxy
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-homeproxy
+
+#passwall
+#svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-passwall2
+
+#passwall2
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-passwall2
+
+#bypass
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-bypass
+
+#ssrplus
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-ssr-plus
+
+#vssr
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-vssr
+
+#bypass
+svn export https://github.com/kenzok8/small/branches/master/luci-app-bypass
+
+#openclash
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-openclash
+
+#daed
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/daed
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-daed
+
+#systools
 git clone https://github.com/sirpdboy/netspeedtest.git
 git clone https://github.com/sirpdboy/luci-app-autotimeset.git
 git clone https://github.com/sirpdboy/luci-app-advanced.git
-svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-quickstart
-svn export https://github.com/kiddin9/openwrt-packages/branches/master/quickstart
-svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-istorex
-svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-istore
 
-svn export https://github.com/v2rayA/v2raya-openwrt/branches/master/luci-app-v2raya
-#svn export https://github.com/v2rayA/v2raya-openwrt/branches/master/v2raya
-#svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-passwall
-svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-passwall2
-svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-ssr-plus
-svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-vssr
-svn export https://github.com/kenzok8/small/branches/master/luci-app-bypass
 
-svn export https://github.com/kiddin9/openwrt-packages/branches/master/firewall4
+
 

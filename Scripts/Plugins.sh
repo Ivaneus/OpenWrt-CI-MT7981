@@ -12,6 +12,8 @@ svn export https://github.com/kenzok8/openwrt-packages/branches/master/taskd
 svn export https://github.com/kiddin9/openwrt-packages/branches/master/taskd
 svn export https://github.com/kenzok8/openwrt-packages/branches/master/luci-lib-xterm
 svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-lib-xterm
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/btop
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/coremark
 #Design Theme
 git clone --depth=1 --single-branch --branch $(echo $OpenWrt_URL | grep -iEq "lede|padavanonly" && echo "main" || echo "js") https://github.com/papagaye744/luci-theme-design.git
 git clone --depth=1 --single-branch https://github.com/gngpp/luci-app-design-config.git

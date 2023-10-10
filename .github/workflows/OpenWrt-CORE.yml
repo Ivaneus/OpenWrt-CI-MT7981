@@ -77,7 +77,22 @@ jobs:
 
           chmod +x ./*.sh
           dos2unix ./*.sh
-
+          
+    - name: Free Disk Space (Ubuntu)
+      uses: jlumbroso/free-disk-space@main
+      with:
+        # this might remove tools that are actually needed,
+        # if set to "true" but frees about 6 GB
+        tool-cache: true
+        
+        # all of these default to true, but feel free to set to
+        # "false" if necessary for your workflow
+        android: true
+        dotnet: true
+        haskell: true
+        large-packages: true
+        swap-storage: true
+        
       - name: Clone OpenWrt Code
         run: |
           git clone --depth=1 --single-branch --branch $OpenWrt_BRANCH $OpenWrt_URL ./openwrt

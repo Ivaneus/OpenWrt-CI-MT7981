@@ -4,7 +4,10 @@
 svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-quickstart
 svn export https://github.com/kiddin9/openwrt-packages/branches/master/quickstart
 svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-istorex
-svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-istore
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-store
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-lib-taskd
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-store
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-lib-taskd
 
 #Design Theme
 git clone --depth=1 --single-branch --branch $(echo $OpenWrt_URL | grep -iEq "lede|padavanonly" && echo "main" || echo "js") https://github.com/papagaye744/luci-theme-design.git

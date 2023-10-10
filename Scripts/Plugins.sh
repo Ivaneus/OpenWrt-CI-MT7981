@@ -52,7 +52,8 @@ svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-
 svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-vssr
 
 #bypass
-svn export https://github.com/kenzok8/small/branches/master/luci-app-bypass
+#svn export https://github.com/kenzok8/small/branches/master/luci-app-bypass
+svn export https://github.com/Cneupa/luci-app-bypass/branches/main/luci-app-bypass
 
 #openclash
 svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-openclash

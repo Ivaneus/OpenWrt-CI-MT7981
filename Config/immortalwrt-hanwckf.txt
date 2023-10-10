@@ -25,8 +25,10 @@ CONFIG_PACKAGE_luci-app-netspeedtest=y
 CONFIG_PACKAGE_luci-app-autotimeset=y
 CONFIG_PACKAGE_luci-app-advanced=y
 CONFIG_PACKAGE_luci-app-quickstart=y
+CONFIG_PACKAGE_quickstart=y
 CONFIG_PACKAGE_luci-app-istorex=y
-
+CONFIG_PACKAGE_luci-lib-taskd=y
+CONFIG_PACKAGE_luci-app-store=y
 CONFIG_PACKAGE_trojan-go=y
 CONFIG_PACKAGE_v2raya=y
 CONFIG_PACKAGE_sing-box=y

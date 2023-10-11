@@ -52,7 +52,7 @@ jobs:
           haskell: true
           large-packages: true
           docker-images: false
-          swap-storage: true
+          swap-storage: false
         
       - name: Initialization Environment
         env:

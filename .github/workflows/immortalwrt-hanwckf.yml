@@ -24,9 +24,9 @@ jobs:
       #默认主机名
       OpenWrt_NAME: ImmortalWrt
       #默认密码，仅作展示，请勿乱改
-      OpenWrt_PW: 无
+      OpenWrt_PW: password
       #默认地址
-      OpenWrt_IP: 192.168.2.1
+      OpenWrt_IP: 192.168.123.1
       #默认源码
       OpenWrt_URL: https://github.com/hanwckf/immortalwrt-mt798x.git
       #默认分支

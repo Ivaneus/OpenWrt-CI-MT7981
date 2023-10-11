@@ -66,6 +66,7 @@ git clone https://github.com/sirpdboy/netspeedtest.git
 git clone https://github.com/sirpdboy/luci-app-autotimeset.git
 git clone https://github.com/sirpdboy/luci-app-advanced.git
 svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-wrtbwmon
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/wrtbwmon
 svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-pushbot
 svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-wechatpush
 

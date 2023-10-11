@@ -53,8 +53,6 @@ svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-
 
 #bypass
 svn export https://github.com/kenzok8/small/branches/master/luci-app-bypass
-#svn export https://github.com/Cneupa/luci-app-bypass/branches/main/luci-app-bypass
-#git clone https://github.com/Ivaneus/luci-app-bypass.git
 
 #openclash
 svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-openclash
@@ -67,7 +65,8 @@ svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-
 git clone https://github.com/sirpdboy/netspeedtest.git
 git clone https://github.com/sirpdboy/luci-app-autotimeset.git
 git clone https://github.com/sirpdboy/luci-app-advanced.git
-
-
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-wrtbwmon
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-pushbot
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-wechatpush
 
 

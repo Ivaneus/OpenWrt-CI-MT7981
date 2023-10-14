@@ -4,9 +4,12 @@
 #rm -rf $(find ./feeds/luci/ -type d -regex ".*\(alist\).*")
 #rm -rf $(find ./feeds/packages/ -type d -regex ".*\(alist\).*")
 #修改golang版本
+if [ $(cat ./feeds/packages/lang/golang/golang/Makefile | grep GO_VERSION_MAJOR_MINOR | cut -d . -f 2) \< 20 ]
+then
 sed -i "s/GO_VERSION_MAJOR_MINOR.*/GO_VERSION_MAJOR_MINOR:=1.20/g" ./feeds/packages/lang/golang/golang/Makefile
 sed -i "s/GO_VERSION_PATCH.*/GO_VERSION_PATCH:=8/g" ./feeds/packages/lang/golang/golang/Makefile
 sed -i "s/PKG_HASH.*/PKG_HASH:=38d71714fa5279f97240451956d8e47e3c1b6a5de7cb84137949d62b5dd3182e/g" ./feeds/packages/lang/golang/golang/Makefile
+fi
 #修改默认主题
 sed -i "s/luci-theme-bootstrap/luci-theme-$OpenWrt_THEME/g" $(find ./feeds/luci/collections/ -type f -name "Makefile")
 #修改默认IP地址

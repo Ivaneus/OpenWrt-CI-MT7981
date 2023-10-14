@@ -3,6 +3,9 @@
 #删除冲突插件
 #rm -rf $(find ./feeds/luci/ -type d -regex ".*\(alist\).*")
 #rm -rf $(find ./feeds/packages/ -type d -regex ".*\(alist\).*")
+#修改golang版本
+sed -i "s/GO_VERSION_MAJOR_MINOR.*/GO_VERSION_MAJOR_MINOR:=1.20/g" ./feeds/packages/lang/golang/golang/Makefile
+sed -i "s/GO_VERSION_PATCH.*/GO_VERSION_PATCH:=8/g" ./feeds/packages/lang/golang/golang/Makefile
 #修改默认主题
 sed -i "s/luci-theme-bootstrap/luci-theme-$OpenWrt_THEME/g" $(find ./feeds/luci/collections/ -type f -name "Makefile")
 #修改默认IP地址

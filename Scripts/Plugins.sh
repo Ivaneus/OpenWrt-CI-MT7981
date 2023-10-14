@@ -34,7 +34,7 @@ git clone --depth=1 --single-branch https://github.com/gngpp/luci-app-design-con
 
 #v2raya
 svn export https://github.com/v2rayA/v2raya-openwrt/branches/master/luci-app-v2raya
-#svn export https://github.com/v2rayA/v2raya-openwrt/branches/master/v2raya
+svn export https://github.com/v2rayA/v2raya-openwrt/branches/master/v2raya
 
 #homeproxy
 svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-homeproxy

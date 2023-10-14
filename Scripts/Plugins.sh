@@ -39,11 +39,14 @@ svn export https://github.com/v2rayA/v2raya-openwrt/branches/master/luci-app-v2r
 #homeproxy
 svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-homeproxy
 
+#passwall package
+git clone https://github.com/xiaorouji/openwrt-passwall-packages.git
 #passwall
-#svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-passwall2
-
+#svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-passwall
+git clone https://github.com/xiaorouji/openwrt-passwall
 #passwall2
-svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-passwall2
+#svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-passwall2
+git clone https://github.com/xiaorouji/openwrt-passwall2
 
 #ssrplus
 svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-ssr-plus

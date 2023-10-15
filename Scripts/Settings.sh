@@ -16,7 +16,6 @@ sed -i "s/luci-theme-bootstrap/luci-theme-$OpenWrt_THEME/g" $(find ./feeds/luci/
 sed -i "s/192\.168\.[0-9]*\.[0-9]*/$OpenWrt_IP/g" ./package/base-files/files/bin/config_generate
 #修改默认密码为password
 sed -i 's/root.*/root:$1$j23jzjF7$M4tqDe24tNKd.07hhm3l70:19641:0:99999:7:::/g' ./package/base-files/files/etc/shadow
-root:::0:99999:7:::
 #修改默认主机名
 sed -i "s/hostname='.*'/hostname='$OpenWrt_NAME'/g" ./package/base-files/files/bin/config_generate
 #修改默认时区

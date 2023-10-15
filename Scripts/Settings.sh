@@ -4,21 +4,21 @@
 #rm -rf $(find ./feeds/luci/ -type d -regex ".*\(alist\).*")
 #rm -rf $(find ./feeds/packages/ -type d -regex ".*\(alist\).*")
 #修改golang版本
-ls
 ls ./feeds/packages/lang/golang/
+echo "------######"
 ls ./feeds/packages/lang/golang/golang/
-makefilegoversion=$(cat ./feeds/packages/lang/golang/golang/makefile | grep GO_VERSION_MAJOR_MINOR | cut -d = -f 2)
+makefilegoversion=$(cat ./feeds/packages/lang/golang/golang/Makefile | grep GO_VERSION_MAJOR_MINOR | cut -d = -f 2)
 y_or_n=`echo $makefilegoversion 1.20 | awk '{if($1 > 1.20) print 1; else print 0;}'`
 if [ $y_or_n -eq 1 ]
 then
     echo "makefilegoversion > 1.20"
-cat ./feeds/packages/lang/golang/golang/makefile | grep -E "GO_VERSION_MAJOR_MINOR:|GO_VERSION_PATCH:|PKG_HASH:"
+cat ./feeds/packages/lang/golang/golang/Makefile | grep -E "GO_VERSION_MAJOR_MINOR:|GO_VERSION_PATCH:|PKG_HASH:"
 else
    echo "makefilegoversion <= 1.20"
 sed -i "s/GO_VERSION_MAJOR_MINOR:.*/GO_VERSION_MAJOR_MINOR:=1.20/g" ./feeds/packages/lang/golang/golang/Makefile
 sed -i "s/GO_VERSION_PATCH:.*/GO_VERSION_PATCH:=8/g" ./feeds/packages/lang/golang/golang/Makefile
 sed -i "s/PKG_HASH:.*/PKG_HASH:=38d71714fa5279f97240451956d8e47e3c1b6a5de7cb84137949d62b5dd3182e/g" ./feeds/packages/lang/golang/golang/Makefile
-cat ./feeds/packages/lang/golang/golang/makefile | grep -E "GO_VERSION_MAJOR_MINOR:|GO_VERSION_PATCH:|PKG_HASH:"  
+cat ./feeds/packages/lang/golang/golang/Makefile | grep -E "GO_VERSION_MAJOR_MINOR:|GO_VERSION_PATCH:|PKG_HASH:"  
 fi
 #修改默认主题
 sed -i "s/luci-theme-bootstrap/luci-theme-$OpenWrt_THEME/g" $(find ./feeds/luci/collections/ -type f -name "Makefile")

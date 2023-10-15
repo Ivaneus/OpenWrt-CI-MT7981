@@ -16,7 +16,7 @@ else
 #sed -i "s/GO_VERSION_PATCH:.*/GO_VERSION_PATCH:=8/g" ./feeds/packages/lang/golang/golang/Makefile
 #sed -i "s/PKG_HASH:.*/PKG_HASH:=38d71714fa5279f97240451956d8e47e3c1b6a5de7cb84137949d62b5dd3182e/g" ./feeds/packages/lang/golang/golang/Makefile
 wget https://raw.githubusercontent.com/Ivaneus/OpenWrt-CI-MT7981/master/golang.zip
-unzip -d ./package/lang golang.zip
+unzip -d ./packages/lang golang.zip
 cat ./feeds/packages/lang/golang/golang/Makefile | grep -E "GO_VERSION_MAJOR_MINOR:|GO_VERSION_PATCH:|PKG_HASH:"  
 fi
 #修改默认主题

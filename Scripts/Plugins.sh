@@ -61,8 +61,8 @@ svn export https://github.com/kenzok8/small/branches/master/luci-app-bypass
 svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-openclash
 
 #daed
-svn export https://github.com/kiddin9/openwrt-packages/branches/master/daed
-svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-daed
+#svn export https://github.com/kiddin9/openwrt-packages/branches/master/daed
+#svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-daed
 
 #systools
 git clone https://github.com/sirpdboy/netspeedtest.git

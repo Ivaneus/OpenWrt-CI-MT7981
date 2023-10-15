@@ -4,7 +4,10 @@
 #rm -rf $(find ./feeds/luci/ -type d -regex ".*\(alist\).*")
 #rm -rf $(find ./feeds/packages/ -type d -regex ".*\(alist\).*")
 #修改golang版本
-makefilegoversion=$(cat Makefile | grep GO_VERSION_MAJOR_MINOR | cut -d = -f 2)
+ls
+ls ./feeds/packages/lang/golang/
+ls ./feeds/packages/lang/golang/golang/
+makefilegoversion=$(cat ./feeds/packages/lang/golang/golang/makefile | grep GO_VERSION_MAJOR_MINOR | cut -d = -f 2)
 y_or_n=`echo $makefilegoversion 1.20 | awk '{if($1 > 1.20) print 1; else print 0;}'`
 if [ $y_or_n -eq 1 ]
 then

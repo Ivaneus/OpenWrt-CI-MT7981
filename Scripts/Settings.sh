@@ -5,20 +5,20 @@
 #rm -rf $(find ./feeds/packages/ -type d -regex ".*\(alist\).*")
 #修改golang版本
 makefilegoversion=$(cat ./feeds/packages/lang/golang/golang/Makefile | grep GO_VERSION_MAJOR_MINOR | cut -d = -f 2)
-y_or_n=`echo $makefilegoversion 1.20 | awk '{if($1 > 1.20) print 1; else print 0;}'`
+y_or_n=`echo $makefilegoversion 1.21 | awk '{if($1 > 1.20) print 1; else print 0;}'`
 if [ $y_or_n -eq 1 ]
 then
-    echo "makefilegoversion > 1.20"
+    echo "makefilegoversion > 1.21"
 cat ./feeds/packages/lang/golang/golang/Makefile | grep -E "GO_VERSION_MAJOR_MINOR:|GO_VERSION_PATCH:|PKG_HASH:"
 else
-   echo "makefilegoversion <= 1.20"
+   echo "makefilegoversion <= 1.21"
 #sed -i "s/GO_VERSION_MAJOR_MINOR:.*/GO_VERSION_MAJOR_MINOR:=1.20/g" ./feeds/packages/lang/golang/golang/Makefile
 #sed -i "s/GO_VERSION_PATCH:.*/GO_VERSION_PATCH:=8/g" ./feeds/packages/lang/golang/golang/Makefile
 #sed -i "s/PKG_HASH:.*/PKG_HASH:=38d71714fa5279f97240451956d8e47e3c1b6a5de7cb84137949d62b5dd3182e/g" ./feeds/packages/lang/golang/golang/Makefile
 #wget https://raw.githubusercontent.com/Ivaneus/OpenWrt-CI-MT7981/master/golang.zip
 #unzip -o -d ./feeds/packages/lang golang.zip
 rm -rf ./feeds/packages/lang/golang
-git clone https://github.com/sbwml/packages_lang_golang -b 20.x ./feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 21.x ./feeds/packages/lang/golang
 cat ./feeds/packages/lang/golang/golang/Makefile | grep -E "GO_VERSION_MAJOR_MINOR:|GO_VERSION_PATCH:|PKG_HASH:"  
 fi
 #修改默认主题

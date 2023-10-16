@@ -58,7 +58,7 @@ jobs:
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
-        echo "chk_clang_1"
+          echo "chk_clang_1"
           clang --version
           docker rmi $(docker images -q)
           sudo -E apt -yqq update
@@ -69,7 +69,7 @@ jobs:
           sudo -E apt -yqq autoclean
           sudo -E apt -yqq clean
           sudo -E systemctl daemon-reload
-        echo "chk_clang_2"        
+          echo "chk_clang_2"        
           clang --version
           sudo -E timedatectl set-timezone "Asia/Shanghai"
           sudo -E rm -rf $(sed -n "3{s/\r$//g;p;q}" $GITHUB_WORKSPACE/Depends.txt)

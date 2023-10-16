@@ -165,7 +165,7 @@ jobs:
           cp -rf ./.config ./upload/Config_"$OpenWrt_TARGET"_"$OpenWrt_SOURCE"_"$OpenWrt_DATE".txt
 
           cd ./upload
-
+          ls
           $GITHUB_WORKSPACE/Scripts/Renames.sh
 
       - name: Release Firmware

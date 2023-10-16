@@ -50,6 +50,7 @@ git clone https://github.com/xiaorouji/openwrt-passwall2
 
 #ssrplus
 svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-ssr-plus
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/shadow-tls
 
 #vssr
 svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-app-vssr

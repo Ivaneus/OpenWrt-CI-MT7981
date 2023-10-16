@@ -43,7 +43,6 @@ CONFIG_PACKAGE_kmod-xdp-sockets-diag=y
 CONFIG_PACKAGE_luci-app-daed=y
 CONFIG_PACKAGE_daed-geoip=y
 CONFIG_PACKAGE_daed-geosite=y
-CONFIG_PACKAGE_qosify=y
 #app
 CONFIG_PACKAGE_luci-app-passwall=y
 CONFIG_PACKAGE_luci-app-ssr-plus=y

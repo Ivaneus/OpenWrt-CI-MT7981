@@ -73,7 +73,7 @@ jobs:
           echo "chk_clang_2"        
           clang --version
           sudo -E timedatectl set-timezone "Asia/Shanghai"
-          sudo -E rm -rf $(sed -n "3{s/\r$//g;p;q}" $GITHUB_WORKSPACE/Depends.txt)
+          #sudo -E rm -rf $(sed -n "3{s/\r$//g;p;q}" $GITHUB_WORKSPACE/Depends.txt)
       - name: Initialization Values
         run: |
           export OpenWrt_DATE=$(TZ=UTC-8 date +"%y.%m.%d_%H.%M.%S")

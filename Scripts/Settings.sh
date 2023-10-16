@@ -27,6 +27,8 @@ sudo apt list --installed | grep clang
 sudo apt list --installed | grep llvm
 whereis clang
 whereis llvm
+sudo mkdir -p ./staging_dir/host/llvm-bpf/bin/
+sudo ln -s /usr/bin/clang ./staging_dir/host/llvm-bpf/bin/clang
 fi
 #修改默认主题
 sed -i "s/luci-theme-bootstrap/luci-theme-$OpenWrt_THEME/g" $(find ./feeds/luci/collections/ -type f -name "Makefile")

@@ -58,7 +58,6 @@ jobs:
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
-          dpkg -l clang llvm
           clang --version
           docker rmi $(docker images -q)
           sudo -E apt -yqq update

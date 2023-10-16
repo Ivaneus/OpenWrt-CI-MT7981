@@ -50,8 +50,8 @@ jobs:
           android: true
           dotnet: true
           haskell: true
-          large-packages: true
-          docker-images: false
+          large-packages: false
+          docker-images: true
           swap-storage: false
         
       - name: Initialization Environment
@@ -61,7 +61,6 @@ jobs:
           echo "chk_clang_1"
           clang --version
           whereis clang
-          docker rmi $(docker images -q)
           sudo -E apt -yqq update
           #sudo -E apt -yqq purge $(sed -n "1{s/\r$//g;p;q}" $GITHUB_WORKSPACE/Depends.txt)
           sudo -E apt -yqq full-upgrade

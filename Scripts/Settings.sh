@@ -23,7 +23,8 @@ cat ./feeds/packages/lang/golang/golang/Makefile | grep -E "GO_VERSION_MAJOR_MIN
 clang --version
 clang-14 --version
 clang-15 --version
-dpkg -l clang llvm
+sudo apt list --installed | grep clang
+sudo apt list --installed | grep llvm
 whereis clang
 whereis llvm
 fi

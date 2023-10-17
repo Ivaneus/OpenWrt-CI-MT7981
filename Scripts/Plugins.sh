@@ -12,6 +12,8 @@ svn export https://github.com/kenzok8/openwrt-packages/branches/master/taskd
 svn export https://github.com/kiddin9/openwrt-packages/branches/master/taskd
 svn export https://github.com/kenzok8/openwrt-packages/branches/master/luci-lib-xterm
 svn export https://github.com/kiddin9/openwrt-packages/branches/master/luci-lib-xterm
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/lua-neturl
+svn export https://github.com/kiddin9/openwrt-packages/branches/master/lua-maxminddb
 #svn export https://github.com/kiddin9/openwrt-packages/branches/master/btop
 #svn export https://github.com/kiddin9/openwrt-packages/branches/master/coremark
 #Design Theme

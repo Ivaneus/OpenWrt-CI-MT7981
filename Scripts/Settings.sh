@@ -12,23 +12,9 @@ then
 cat ./feeds/packages/lang/golang/golang/Makefile | grep -E "GO_VERSION_MAJOR_MINOR:|GO_VERSION_PATCH:|PKG_HASH:"
 else
    echo "makefilegoversion <= 1.21"
-#sed -i "s/GO_VERSION_MAJOR_MINOR:.*/GO_VERSION_MAJOR_MINOR:=1.20/g" ./feeds/packages/lang/golang/golang/Makefile
-#sed -i "s/GO_VERSION_PATCH:.*/GO_VERSION_PATCH:=8/g" ./feeds/packages/lang/golang/golang/Makefile
-#sed -i "s/PKG_HASH:.*/PKG_HASH:=38d71714fa5279f97240451956d8e47e3c1b6a5de7cb84137949d62b5dd3182e/g" ./feeds/packages/lang/golang/golang/Makefile
-#wget https://raw.githubusercontent.com/Ivaneus/OpenWrt-CI-MT7981/master/golang.zip
-#unzip -o -d ./feeds/packages/lang golang.zip
-rm -rf ./feeds/packages/lang/golang
 git clone https://github.com/sbwml/packages_lang_golang -b 21.x ./feeds/packages/lang/golang
 cat ./feeds/packages/lang/golang/golang/Makefile | grep -E "GO_VERSION_MAJOR_MINOR:|GO_VERSION_PATCH:|PKG_HASH:"  
 clang --version
-clang-14 --version
-clang-15 --version
-sudo apt list --installed | grep clang
-sudo apt list --installed | grep llvm
-whereis clang
-whereis llvm
-#sudo mkdir -p ./staging_dir/host/llvm-bpf/bin/
-#sudo ln -s /usr/bin/clang ./staging_dir/host/llvm-bpf/bin/clang
 fi
 #修改默认主题
 sed -i "s/luci-theme-bootstrap/luci-theme-$OpenWrt_THEME/g" $(find ./feeds/luci/collections/ -type f -name "Makefile")
@@ -46,7 +32,12 @@ if [[ $OpenWrt_URL == *"lede"* ]] ; then
   #修改默认时间格式
   sed -i 's/os.date()/os.date("%Y-%m-%d %H:%M:%S %A")/g' $(find ./package/*/autocore/files/ -type f -name "index.htm")
 fi
-
+<< EOF
+#设置频率(cmcc 3000m-emmc如需切换为52Mhz,请删除紧邻此项的<< EOF 及EOF)
+if [[ $OpenWrt_TARGET == *"immortalwrt-hanwckf"* ]] ; then
+  sed -i 's/max-frequency = <26000000>;/max-frequency = <52000000>;/g' ./target/linux/mediatek/files-5.4/arch/arm64/boot/dts/mediatek/mt7981-cmcc-rax3000m-emmc.dts
+fi
+EOF
 #设置频率
 if [[ $OpenWrt_TARGET == *"rax3000m-emmc-52Mhz"* ]] ; then
   sed -i 's/max-frequency = <26000000>;/max-frequency = <52000000>;/g' ./target/linux/mediatek/files-5.4/arch/arm64/boot/dts/mediatek/mt7981-cmcc-rax3000m-emmc.dts

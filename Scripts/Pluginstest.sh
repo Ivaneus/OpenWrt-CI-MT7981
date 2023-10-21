@@ -10,7 +10,9 @@ git clone --depth=1 --single-branch https://github.com/gngpp/luci-app-design-con
 
 #Extra APP
 git clone --depth=1 --single-branch https://github.com/kiddin9/openwrt-packages
-rm -rf ./openwrt-packages/luci-base ./openwrt-packages/firewall ./openwrt-packages/firewall ./openwrt-packages/luci-app-upnp ./openwrt-packages/miniupnpd-iptables ./openwrt-packages/luci-app-zerotier ./openwrt-packages/luci-app-ddns
+git clone https://github.com/xiaorouji/openwrt-passwall
+git clone https://github.com/xiaorouji/openwrt-passwall2
+rm -rf ./openwrt-packages/luci-base ./openwrt-packages/firewall ./openwrt-packages/firewall ./openwrt-packages/luci-app-upnp ./openwrt-packages/miniupnpd-iptables ./openwrt-packages/luci-app-zerotier ./openwrt-packages/luci-app-ddns ./openwrt-packages/luci-app-passwall ./openwrt-packages/luci-app-passwall2
 
 
 

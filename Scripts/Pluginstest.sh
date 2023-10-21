@@ -15,8 +15,7 @@ git clone https://github.com/xiaorouji/openwrt-passwall2
 #v2raya
 svn export https://github.com/v2rayA/v2raya-openwrt/branches/master/luci-app-v2raya
 svn export https://github.com/v2rayA/v2raya-openwrt/branches/master/v2raya
-rm -rf ./openwrt-packages/luci-base ./openwrt-packages/firewall ./openwrt-packages/firewall ./openwrt-packages/luci-app-upnp ./openwrt-packages/miniupnpd-iptables ./openwrt-packages/luci-app-zerotier ./openwrt-packages/luci-app-ddns ./openwrt-packages/luci-app-passwall ./openwrt-packages/luci-app-passwall2
- ./openwrt-packages/luci-app-v2raya ./openwrt-packages/v2raya
+rm -rf ./openwrt-packages/luci-base ./openwrt-packages/firewall ./openwrt-packages/firewall ./openwrt-packages/luci-app-upnp ./openwrt-packages/miniupnpd-iptables ./openwrt-packages/luci-app-zerotier ./openwrt-packages/luci-app-ddns ./openwrt-packages/luci-app-passwall ./openwrt-packages/luci-app-passwall2 ./openwrt-packages/luci-app-v2raya ./openwrt-packages/v2raya
 
 
 

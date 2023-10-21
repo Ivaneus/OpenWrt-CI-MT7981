@@ -1,4 +1,4 @@
-#cetron_ct3003 cmcc_rax3000m h3c_nx30pro jcg_q30 konka_komi-a31 livinet_zr-3020 360-t7 360-t7-108M xiaomi_mi-router-wr30u-112m xiaomi_mi-router-wr30u-stock clt-r30b1 imou_lc-hx3001 clt-r30b1-112M
+#abt_asr3000 cetron_ct3003 cmcc_rax3000m cmcc_rax3000m-emmc clt-r30b1 r30b1-112M h3c_nx30pro imou_lc-hx3001 jcg_q30 konka_komi-a31 livinet_zr-3020 360-t7 360-t7-108M xiaomi_mi-router-wr30u-112m xiaomi_mi-router-wr30u-stock
 #theme
 CONFIG_PACKAGE_luci-app-argon-config=y
 CONFIG_PACKAGE_luci-theme-argon=y

@@ -10,7 +10,7 @@ git clone --depth=1 --single-branch https://github.com/gngpp/luci-app-design-con
 
 #Extra APP
 git clone --depth=1 --single-branch https://github.com/kiddin9/openwrt-packages
-
+rm -rf ./openwrt-packages/luci-base
 
 
 

@@ -10,8 +10,10 @@ git clone --depth=1 --single-branch https://github.com/gngpp/luci-app-design-con
 
 #Extra APP
 git clone https://github.com/kiddin9/openwrt-packages
+cd ./openwrt-packages && git checkout 89ab7a9cacb40bb8270decc69e55f04571f753d6 && cd ..
 git clone https://github.com/xiaorouji/openwrt-passwall
 git clone https://github.com/xiaorouji/openwrt-passwall2
+
 #v2raya
 svn export https://github.com/v2rayA/v2raya-openwrt/branches/master/luci-app-v2raya
 svn export https://github.com/v2rayA/v2raya-openwrt/branches/master/v2raya

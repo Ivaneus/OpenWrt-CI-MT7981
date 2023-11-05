@@ -30,4 +30,4 @@ jobs:
       #默认源码
       OpenWrt_URL: https://github.com/coolsnowwolf/lede.git
       #默认分支
-      OpenWrt_BRANCH: mtk
+      OpenWrt_BRANCH: master

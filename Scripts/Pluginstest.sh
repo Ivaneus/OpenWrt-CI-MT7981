@@ -15,7 +15,7 @@ git clone https://github.com/xiaorouji/openwrt-passwall2.git
 
 #v2raya
 git clone https://github.com/v2rayA/v2raya-openwrt.git
-rm -rf ./v2raya-openwrt/ca-certificates ./v2raya-openwrt/scripts ./v2raya-openwrt/v2fly-geodata ./v2raya-openwrt/v2ray-core ./v2raya-openwrt/xray-core
+rm -rf ./v2raya-openwrt/ca-certificates ./v2raya-openwrt/scripts ./v2raya-openwrt/v2ray-core ./v2raya-openwrt/xray-core
 rm -rf ./openwrt-packages/luci-base ./openwrt-packages/curl ./openwrt-packages/opkg ./openwrt-packages/luci-opkg ./openwrt-packages/luci-app-firewall ./openwrt-packages/firewall ./openwrt-packages/firewall4 ./openwrt-packages/luci-mod-network ./openwrt-packages/luci-mod-status ./openwrt-packages/luci-mod-system 
 rm -rf ./openwrt-packages/luci-app-upnp ./openwrt-packages/miniupnpd-iptables ./openwrt-packages/luci-app-zerotier ./openwrt-packages/luci-app-ddns ./openwrt-packages/luci-app-passwall ./openwrt-packages/luci-app-passwall2 ./openwrt-packages/luci-app-v2raya ./openwrt-packages/v2raya
 
